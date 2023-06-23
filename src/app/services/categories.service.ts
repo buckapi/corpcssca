@@ -1,0 +1,82 @@
+import {Category} from 'src/app/interfaces/category';
+
+export const CATEGORIES: Category[] = [
+    {
+    name:'ACCESORIOS',
+    images:[
+      'assets/assetsdash/images/profile/profile.png'
+    ],
+    idCategory:'ca000001'
+  }, 
+  {
+    name:'AMPERIMETRO',
+    images:[
+      'assets/assetsdash/images/profile/profile.png'
+    ],
+    idCategory:'ca000002'
+  },
+    {
+    name:'ARRANQUES',
+    images:[
+      'assets/assetsdash/images/profile/profile.png'
+    ],
+    idCategory:'ca000003'
+  },
+   {
+    name:'BOBINAS',
+    images:[
+      'assets/assetsdash/images/profile/profile.png'
+    ],
+    idCategory:'ca000004'
+  },
+
+  {
+    name:'BOMBAS',
+    images:[
+      'assets/assetsdash/images/profile/profile.png'
+    ],
+    idCategory:'ca000004'
+  },
+  {
+    name:'FILTROS',
+    images:[
+      'assets/assetsdash/images/profile/profile.png'
+    ],
+    idCategory:'ca000004'
+  },
+  {
+    name:'MODULOS',
+    images:[
+      'assets/assetsdash/images/profile/profile.png'
+    ],
+    idCategory:'ca000004'
+  },
+  {
+   name:'REP MOTOR',
+   images:[
+     'assets/assetsdash/images/profile/profile.png'
+   ],
+   idCategory:'ca000004'
+ },
+ {
+  name:'PARTES ELECTRICAS',
+  images:[
+    'assets/assetsdash/images/profile/profile.png'
+  ],
+  idCategory:'ca000004'
+},
+{
+  name:'VALVULAS',
+  images:[
+    'assets/assetsdash/images/profile/profile.png'
+  ],
+  idCategory:'ca000004'
+},
+{
+  name:'REPUESTOS',
+  images:[
+    'assets/assetsdash/images/profile/profile.png'
+  ],
+  idCategory:'ca000004'
+} 
+];
