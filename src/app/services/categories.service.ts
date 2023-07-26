@@ -35,48 +35,48 @@ export const CATEGORIES: Category[] = [
     images:[
       'assets/assetsdash/images/profile/profile.png'
     ],
-    idCategory:'ca000004'
+    idCategory:'ca000005'
   },
   {
     name:'FILTROS',
     images:[
       'assets/assetsdash/images/profile/profile.png'
     ],
-    idCategory:'ca000004'
+    idCategory:'ca000006'
   },
   {
     name:'MODULOS',
     images:[
       'assets/assetsdash/images/profile/profile.png'
     ],
-    idCategory:'ca000004'
+    idCategory:'ca000007'
   },
   {
    name:'REP MOTOR',
    images:[
      'assets/assetsdash/images/profile/profile.png'
    ],
-   idCategory:'ca000004'
+   idCategory:'ca000008'
  },
  {
   name:'PARTES ELECTRICAS',
   images:[
     'assets/assetsdash/images/profile/profile.png'
   ],
-  idCategory:'ca000004'
+  idCategory:'ca000009'
 },
 {
   name:'VALVULAS',
   images:[
     'assets/assetsdash/images/profile/profile.png'
   ],
-  idCategory:'ca000004'
+  idCategory:'ca000010'
 },
 {
   name:'REPUESTOS',
   images:[
     'assets/assetsdash/images/profile/profile.png'
   ],
-  idCategory:'ca000004'
+  idCategory:'ca000011'
 } 
 ];
