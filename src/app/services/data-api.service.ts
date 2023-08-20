@@ -32,7 +32,7 @@ export class DataApiService {
 	});
 
 	getAllProducts(){
-		const url_api = 'https://db.corpcssca.com:9015/api/products';
+		const url_api = 'https://db.corpcssca.com:9010/api/products';
 		return this.http.get(url_api);
 	}
 	getTransationByBranch(branch: string){
@@ -57,7 +57,7 @@ export class DataApiService {
 	}
 
 	getCardByUserId(userId: string){
-		const url_api = `https://db.corpcssca.com:9010/api/cards?filter[where][userId]=${userId}`;
+		const url_api = `https://db.buckapi.us:3069/api/cards?filter[where][userId]=${userId}`;
 		this.cards = this.http.get(url_api);
 		return ( this.http.get(url_api));		
 	}
