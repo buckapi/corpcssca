@@ -35,6 +35,10 @@ export class DataApiService {
 		const url_api = 'https://db.corpcssca.com:9015/api/products';
 		return this.http.get(url_api);
 	}
+  	getAllCategory(){
+      const url_api = 'https://db.corpcssca.com:9015/api/categories';
+		return this.http.get(url_api);
+	}
 	getTransationByBranch(branch: string){
 		const url_api = `https://db.corpcssca.com:9015/api/transactions?filter[where][idBranch]=${branch}`;
 		this.transactions = this.http.get(url_api);
