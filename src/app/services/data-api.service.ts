@@ -32,41 +32,41 @@ export class DataApiService {
 	});
 
 	getAllProducts(){
-		const url_api = 'https://db.buckapi.us:9015/api/products';
+		const url_api = 'https://db.corpcssca.com:9015/api/products';
 		return this.http.get(url_api);
 	}
   	getAllCategory(){
-      const url_api = 'https://db.buckapi.us:9015/api/categories';
+      const url_api = 'https://db.corpcssca.com:9015/api/categories';
 		return this.http.get(url_api);
 	}
 	getTransationByBranch(branch: string){
-		const url_api = `https://db.buckapi.us:9015/api/transactions?filter[where][idBranch]=${branch}`;
+		const url_api = `https://db.corpcssca.com:9015/api/transactions?filter[where][idBranch]=${branch}`;
 		this.transactions = this.http.get(url_api);
 		return ( this.http.get(url_api));		
 	}
 
 	getAllTransactions(){
-		const url_api = 'https://db.buckapi.us:9015/api/transactions';
+		const url_api = 'https://db.corpcssca.com:9015/api/transactions';
 		return this.http.get(url_api);
 	}
 	getProduct(id: string){
-		const url_api = `https://db.buckapi.us:9015/api/products/${id}`;
+		const url_api = `https://db.corpcssca.com:9015/api/products/${id}`;
 		return this.http.get(url_api);
 	}
 
 	getCierresByBranch(branch: string){
-		const url_api = `https://db.buckapi.us:9015/api/infos?filter[where][idBranch]=${branch}`;
+		const url_api = `https://db.corpcssca.com:9015/api/infos?filter[where][idBranch]=${branch}`;
 		this.cierre = this.http.get(url_api);
 		return ( this.http.get(url_api));		
 	}
 
 	getCardByUserId(userId: string){
-		const url_api = `https://db.buckapi.us:3069/api/cards?filter[where][userId]=${userId}`;
+		const url_api = `https://db.buckapi.com:3333/api/cards?filter[where][userId]=${userId}`;
 		this.cards = this.http.get(url_api);
 		return ( this.http.get(url_api));		
 	}
 	getSerialT(branch: string){
-		const url_api = `https://db.buckapi.us:9015/api/branchs/${branch}`;
+		const url_api = `https://db.corpcssca.com:9015/api/branchs/${branch}`;
 		this.branch = this.http.get(url_api);
 		this.butler.serialT=this.branch.serialT;
 		return ( this.branch);		
@@ -79,7 +79,7 @@ export class DataApiService {
 	// }
 setSerialT(serial:SerialInterface, branch: string){
 		// let token = this.authService.getToken();
-		const url_api = `https://db.buckapi.us:9015/api/branchs/${branch}`;
+		const url_api = `https://db.corpcssca.com:9015/api/branchs/${branch}`;
 		return this.http
 		.put<SerialInterface>(url_api, serial)
 		.pipe(map(data => data));
@@ -87,13 +87,13 @@ setSerialT(serial:SerialInterface, branch: string){
 
 
 	saveCard(card :CardInterface){
-		const url_api='https://db.buckapi.us:9015/api/cards';
+		const url_api='https://db.corpcssca.com:9015/api/cards';
 		return this.http
 		.post<CardInterface>(url_api, card)
 		.pipe(map(data => data));
 	}
 	saveTicket(ticket :TicketInterface){
-		const url_api='https://db.buckapi.us:9015/api/transactions';
+		const url_api='https://db.corpcssca.com:9015/api/transactions';
 		return this.http
 		.post<TicketInterface>(url_api, ticket)
 		.pipe(map(data => data));
