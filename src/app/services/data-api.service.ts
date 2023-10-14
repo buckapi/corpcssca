@@ -61,7 +61,7 @@ export class DataApiService {
 	}
 
 	getCardByUserId(userId: string){
-		const url_api = `https://db.buckapi.com:3333/api/cards?filter[where][userId]=${userId}`;
+		const url_api = `https://db.corpcssca.com:3333/imgApi/cards?filter[where][userId]=${userId}`;
 		this.cards = this.http.get(url_api);
 		return ( this.http.get(url_api));		
 	}
